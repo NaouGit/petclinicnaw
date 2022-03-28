@@ -35,7 +35,7 @@ stage ('ACR Login'){
  sh 'docker push ${ACR_LOGINSERVER}/petclinic'
 }
 }
-stage ('K8S Deploy'){
+stage ('K8S Deployment'){
     steps{
         script{
             kubernetesDeploy(
